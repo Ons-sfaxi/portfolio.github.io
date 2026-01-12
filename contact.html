@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Ons Sfaxi">
+    <title>Contact - Ons Sfaxi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link" data-translate-nav="home">Home</a></li>
+                <li><a href="experience.html" class="nav-link" data-translate-nav="experience">Experience</a></li>
+                <li><a href="education.html" class="nav-link" data-translate-nav="education">Education</a></li>
+                <li><a href="skills.html" class="nav-link" data-translate-nav="skills">Skills</a></li>
+                <li><a href="certifications.html" class="nav-link" data-translate-nav="certifications">Certifications</a></li>
+                <li><a href="contact.html" class="nav-link active" data-translate-nav="contact">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <select id="language-selector" onchange="changeLanguage(this.value)" style="background: rgba(255, 255, 255, 0.1); border: 1px solid var(--border-gold); border-radius: 5px; padding: 0.5rem; color: var(--text-white); cursor: pointer;">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact.title">Contactez-moi</h2>
+            <p class="section-subtitle" data-translate="contact.subtitle">Une question ? Un projet ? N'hésitez pas à me contacter</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-translate="contact.email">Email</h3>
+                            <a href="mailto:sfaxi.ones@gmail.com">sfaxi.ones@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-translate="contact.phone">Téléphone</h3>
+                            <a href="tel:+21626158805">+216 26 158 805</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-translate="contact.location">Localisation</h3>
+                            <p>Mahdia, Tunisia</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/ons-sfaxi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ons-sfaxi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:sfaxi.ones@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" data-translate="contact.name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" data-translate="contact.emailPlaceholder" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" data-translate="contact.subject" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="6" data-translate="contact.message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-translate="contact.send">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ons Sfaxi. Tous droits réservés.</p>
+            <p class="footer-note">Conçu et développé avec passion</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

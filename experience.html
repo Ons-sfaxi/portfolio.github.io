@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expérience professionnelle de Ons Sfaxi">
+    <title>Expérience - Ons Sfaxi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link" data-translate-nav="home">Home</a></li>
+                <li><a href="experience.html" class="nav-link active" data-translate-nav="experience">Experience</a></li>
+                <li><a href="education.html" class="nav-link" data-translate-nav="education">Education</a></li>
+                <li><a href="skills.html" class="nav-link" data-translate-nav="skills">Skills</a></li>
+                <li><a href="certifications.html" class="nav-link" data-translate-nav="certifications">Certifications</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate-nav="contact">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <select id="language-selector" onchange="changeLanguage(this.value)" style="background: rgba(255, 255, 255, 0.1); border: 1px solid var(--border-gold); border-radius: 5px; padding: 0.5rem; color: var(--text-white); cursor: pointer;">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="section-title" data-translate="experience.title">Expérience Professionnelle</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fév - Jun 2025</span>
+                        <h3 class="timeline-title">Projet de Fin d'Études : Assistant Virtuel basé sur l'IA</h3>
+                        <h4 class="timeline-company">
+                            <img src="logo_GTI.png" alt="GTI" class="company-logo" style="width: 30px; height: 30px; margin-right: 10px; vertical-align: middle;">
+                            GTI
+                        </h4>
+                        <ul class="timeline-description">
+                            <li>Conception d'un assistant virtuel intelligent avec pipeline de données complet, preprocessing et ingénierie de features</li>
+                            <li>Développement et entraînement de modèles ML/DL pour la reconnaissance d'intentions et l'extraction d'entités</li>
+                            <li>Intégration de LLaMA 3.2 avec RAG (Retrieval-Augmented Generation)</li>
+                            <li>Construction d'APIs REST et frontend React</li>
+                            <li>Assurance de la sécurité IA et contrôle de domaine avec NeMo Guardrails</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun - Août 2024</span>
+                        <h3 class="timeline-title">Stage d'Ingénierie</h3>
+                        <h4 class="timeline-company">
+                            <img src="allnet logo.png" alt="AllNet" class="company-logo" style="width: 30px; height: 30px; margin-right: 10px; vertical-align: middle;">
+                            AllNet
+                        </h4>
+                        <ul class="timeline-description">
+                            <li>Développement d'une interface d'agent IA interactive utilisant Symfony et React</li>
+                            <li>Intégration de LLaMA 3 pour l'interaction en langage naturel</li>
+                            <li>Conception et implémentation de fonctionnalités d'interaction utilisateur-IA</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun - Jul 2023</span>
+                        <h3 class="timeline-title">Stage d'Introduction</h3>
+                        <h4 class="timeline-company">
+                            <img src="logo telecom.jfif" alt="Tunisie Telecom" class="company-logo" style="width: 30px; height: 30px; margin-right: 10px; vertical-align: middle;">
+                            Tunisie Telecom – Mahdia
+                        </h4>
+                        <ul class="timeline-description">
+                            <li>Configuration et supervision des équipements réseau dans l'infrastructure d'entreprise</li>
+                            <li>Support au dépannage et à la maintenance système</li>
+                        </ul>
+                        <div class="project-tech" style="margin-top: 1rem;">
+                            <span>Cisco</span>
+                            <span>LAN/WAN</span>
+                            <span>Configuration</span>
+                            <span>Troubleshooting</span>
+                            <span>Network Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div style="margin-top: 5rem;">
+                <h2 class="section-title" style="margin-bottom: 3rem;" data-translate="experience.projects">Projets</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Ons-sfaxi" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="project-placeholder">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Network Intrusion Detection (2025)</h3>
+                            <p class="project-description">
+                                Pipeline de données end-to-end pour l'analyse du trafic réseau, incluant le preprocessing, 
+                                la sélection de features, l'entraînement de modèles et l'évaluation. Implémentation et comparaison 
+                                de modèles Random Forest et XGBoost pour identifier l'approche la plus efficace pour la détection d'anomalies.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>Random Forest</span>
+                                <span>XGBoost</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Ons-sfaxi" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="project-placeholder">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Facial Emotion Recognition (2024)</h3>
+                            <p class="project-description">
+                                Système de reconnaissance d'émotions faciales en temps réel utilisant un modèle CNN, incluant 
+                                le preprocessing des données, l'ingénierie de features et l'évaluation du modèle. Traitement de 
+                                données multimodales (images et métadonnées) pour supporter une détection d'émotions précise.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>CNN</span>
+                                <span>Computer Vision</span>
+                                <span>Multimodal Data</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ons Sfaxi. Tous droits réservés.</p>
+            <p class="footer-note">Conçu et développé avec passion</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

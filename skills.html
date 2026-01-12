@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compétences techniques de Ons Sfaxi">
+    <title>Compétences - Ons Sfaxi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link" data-translate-nav="home">Home</a></li>
+                <li><a href="experience.html" class="nav-link" data-translate-nav="experience">Experience</a></li>
+                <li><a href="education.html" class="nav-link" data-translate-nav="education">Education</a></li>
+                <li><a href="skills.html" class="nav-link active" data-translate-nav="skills">Skills</a></li>
+                <li><a href="certifications.html" class="nav-link" data-translate-nav="certifications">Certifications</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate-nav="contact">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <select id="language-selector" onchange="changeLanguage(this.value)" style="background: rgba(255, 255, 255, 0.1); border: 1px solid var(--border-gold); border-radius: 5px; padding: 0.5rem; color: var(--text-white); cursor: pointer;">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" style="padding-top: 120px;">
+        <div class="container">
+            <h2 class="section-title" data-translate="skills.technical">Compétences Techniques</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Analytics</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Decision-Making Support</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Random Forest</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">Model Evaluation</span>
+                        <span class="skill-tag">Feature Selection</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-network-wired"></i> Deep Learning</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">CNN</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Fine-Tuning</span>
+                        <span class="skill-tag">Multimodal Data Processing</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Data Engineering</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Data Pipelines</span>
+                        <span class="skill-tag">ETL</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Data Integration</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-robot"></i> AI Tools & LLMs</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">LLaMA</span>
+                        <span class="skill-tag">DistilCamemBERT</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">AI Safety</span>
+                        <span class="skill-tag">Intent Recognition</span>
+                        <span class="skill-tag">Entity Extraction</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-server"></i> Databases & Backend</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">REST API</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming & Tools</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">RStudio</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">SpringBoot</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div style="margin-top: 4rem;">
+                <h2 class="section-title" style="margin-bottom: 3rem;" data-translate="skills.soft">Compétences Personnelles</h2>
+                <div class="about-highlights" style="justify-content: center;">
+                    <div class="highlight-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Soft Skills</h3>
+                        <p style="margin-bottom: 0.5rem;">Résolution de problèmes et pensée analytique</p>
+                        <p style="margin-bottom: 0.5rem;">Esprit d'équipe et communication efficace</p>
+                        <p style="margin-bottom: 0.5rem;">Adaptabilité et apprentissage rapide</p>
+                        <p>Gestion du temps et attention aux détails</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ons Sfaxi. Tous droits réservés.</p>
+            <p class="footer-note">Conçu et développé avec passion</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
